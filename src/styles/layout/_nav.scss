@@ -1,4 +1,24 @@
 @use "../utilities" as *;
 .nav {
-        background-color: map-get($colors, "black");
+        margin-top: pix-rem(44px);
+        background-color: map-get($colors, "white");
+        &-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        }
+        .nav-link__list{
+                display: flex;
+                margin-block: 0;
+                gap: pix-rem(48px);
+                li{
+                        font-size: pix-rem(20px,rem);
+                        a{
+                                color: map-get($colors, 'text-black' );
+                                &:active{
+                                        color: map-get($colors, 'major' );
+                                }
+                        }
+                }
+        }
 }

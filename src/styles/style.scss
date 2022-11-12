@@ -1,6 +1,9 @@
 @use './reset';
 @use './utilities' as *;
+
+@use './component/all-components';
 @use './layout/allLayout';
+@use './pages/pages';
 
 
 :root {
@@ -15,5 +18,5 @@
         -webkit-text-size-adjust: 100%;
 }
 body{
-        background-color: aquamarine;
+        background-color: map-get($colors, 'white');
 }
