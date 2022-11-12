@@ -13,7 +13,7 @@ export default function Nav() {
                                         <li><NavLink to={'/'}>NFTs </NavLink>  </li>
                                         <li><NavLink to={'/'}>Community </NavLink>  </li>
                                 </ul>
-                                <Button />
+                                <Button text={`Connect Wallet`} />
                         </div>
                 </nav>
         )
