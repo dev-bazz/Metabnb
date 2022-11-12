@@ -1,4 +1,4 @@
-@use  '../utilities' as *;
-.nav{
-        background-color: map-get($colors, 'black' ) ;
+@use "../utilities" as *;
+.nav {
+        background-color: map-get($colors, "black");
 }
