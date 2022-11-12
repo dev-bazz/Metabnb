@@ -1,4 +1,39 @@
-@use '../utilities' as *;
-.hero{
-        margin-top: pix-rem(124px);
+@use "../utilities" as *;
+.hero {
+        margin-top: pix-rem(120px,rem);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: pix-rem(16px,rem);
+        @include media-query(767.98px) {
+                justify-content: center;
+        }
+
+        &--title {
+                font-size: pix-rem(55px, rem);
+                font-weight: 400;
+                color: map-get($colors, "text-black");
+                line-height: 140%;
+                span {
+                        font-weight: bold;
+                        color: map-get($colors, "major");
+                }
+        }
+        &--msg{
+                font-size: pix-rem(24px,rem);
+                color: map-get($colors, 'text-black');
+        }
+
+        .container--wrapper {
+                &:nth-child(1) {
+                        margin-top: pix-rem(28px, rem);
+                        width: min(100%, pix-rem(636px,rem));
+                        & > * + * {
+                                margin-top: pix-rem(48px,rem);
+                        }
+                }
+                &:nth-child(2) {
+                        width: min(100%, pix-rem(476px, rem));
+                }
+        }
 }

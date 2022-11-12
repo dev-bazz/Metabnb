@@ -10,7 +10,7 @@ export default function Nav() {
                                 <ul className="nav-link__list" role={'list'}>
                                         <li><NavLink to={'/'}>Home </NavLink>  </li>
                                         <li><NavLink to={'/'}>Place to Stay </NavLink>  </li>
-                                        <li><NavLink to={'/'}>NFTs </NavLink>  </li>
+                                        <li><NavLink to={'NFTs'}>NFTs </NavLink>  </li>
                                         <li><NavLink to={'/'}>Community </NavLink>  </li>
                                 </ul>
                                 <Button text={`Connect Wallet`} className={`btn `} />

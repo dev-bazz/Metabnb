@@ -1,13 +1,12 @@
-@use './reset';
-@use './utilities' as *;
+@use "./reset";
+@use "./utilities" as *;
 
-@use './component/all-components';
-@use './layout/allLayout';
-@use './pages/pages';
-
+@use "./component/all-components";
+@use "./layout/allLayout";
+@use "./pages/pages";
 
 :root {
-        font-family: map-get($font, "fontFamily" ), cursive;
+        font-family: map-get($font, "fontFamily"), cursive;
         line-height: 24px;
         font-weight: 400;
 
@@ -17,6 +16,19 @@
         -moz-osx-font-smoothing: grayscale;
         -webkit-text-size-adjust: 100%;
 }
-body{
-        background-color: map-get($colors, 'white');
+body {
+        background-color: map-get($colors, "white");
+        &::-webkit-scrollbar {
+                display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-moz-selection {
+                background-color: map-get($colors, "major") !important;
+                color: white !important;
+        }
+        &::selection {
+                background-color: map-get($colors, "major") !important;
+                color: white !important;
+        }
 }
