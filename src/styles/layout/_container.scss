@@ -6,7 +6,8 @@ $container: (
 
 .container {
         &--global {
-                width: min(100%, pix-rem(map-get($container, "global")));
+                width: min(100%, calc(pix-rem(map-get($container, "global"),rem) - pix-rem(16px,rem)));
                 margin-inline: auto;
+                padding-inline: pix-rem(16px);
         }
 }
