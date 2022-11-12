@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
+
+// Convert Pixel to Rem/Em
+@function pix-rem($pixel, $suffix:em){
+        $calculate: calc($pixel/16px);
+        @return #{$calculate}#{$suffix};
+}
+
+//  Variable: colors and font
+$font:(
+        "fontFamily" : 'Red Rose',
+
+)

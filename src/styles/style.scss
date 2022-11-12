@@ -1,8 +1,9 @@
 @use './reset';
+@use './utilities' as *;
 
 
 :root {
-        font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+        font-family: map-get($font, "fontFamily" ), cursive;
         line-height: 24px;
         font-weight: 400;
 

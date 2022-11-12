@@ -1,5 +1,9 @@
+import Icons from "../../assets/icons/Icons";
+
 export default function Nav() {
         return (
-                <div>Nav</div>
+                <div>
+                        <Icons name='heart' />
+                </div>
         )
 }
