@@ -2,6 +2,7 @@ import Icons from '../../assets/icons/Icons';
 import heroImage from '../../assets/images/hero-image.webp';
 import footerImage from '../../assets/images/footer-image.webp'
 import NftCard from '../component/NtfCard';
+import imageNFTs from '../../assets/images/imageNFTs';
 
 export default function Home() {
         return (
@@ -30,22 +31,26 @@ export default function Home() {
                                 <div className="inspiration--wrapper container--global">
                                         <h2 id='inspiration'>Inspiration for your next adventure</h2>
                                         <ul role={`list`}>
-                                                <NftCard />
-                                                <NftCard />
-                                                <NftCard />
-                                                <NftCard />
+                                                {imageNFTs.map((nft) => <NftCard
+                                                        image={nft.image}
+                                                        title={nft.title}
+                                                        alt={nft.alt}
+                                                        availability={nft.availability}
+                                                        distance={nft.distance}
+                                                        cost={nft.cost}
+                                                />)}
                                         </ul>
-                                        
+
                                 </div>
                         </section>
                         <section aria-labelledby='Metabnb' className='meta-section'  >
                                 <div className="meta-wrapper container--global">
                                         <div>
                                                 <div className="meta">
-                                                <h2 id='Metabnb'>Metabnb NFTs</h2>
-                                                <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
-                                        </div>
-                                        <button>Learn more</button>
+                                                        <h2 id='Metabnb'>Metabnb NFTs</h2>
+                                                        <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
+                                                </div>
+                                                <button>Learn more</button>
                                         </div>
                                         <div className="meta">
                                                 <img src={footerImage} alt="Meta NFT" srcset="" />
