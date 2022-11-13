@@ -1,4 +1,5 @@
 import wallet from './wallet-connect.png'
+import metamaskFOX from './metamask-fox.png'
 
 // Brand Logo -------------------       -----------     ------------     
 const BrandDefaultS = {
@@ -356,8 +357,15 @@ export const MBToken = () => {
 
 export const Wallet = () => {
         return (<>
-        <img src={wallet} alt='wallet connect icon'/>
+                <img src={wallet} alt='wallet connect icon' />
 
         </>
+        )
+}
+
+
+export const MetaMaskFox = () => {
+        return (
+                <img src={metamaskFOX} alt="icon of meta mask fox" />
         )
 }

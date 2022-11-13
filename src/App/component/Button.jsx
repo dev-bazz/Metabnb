@@ -1,8 +1,8 @@
 
 
-export default function Button({ text, className }) {
+export default function Button({ text, className , modal, fn}) {
         return (
-                <button className={className} >{text}</button>
+                <button onClick={()=> fn.showModal(modal)} className={className} >{text}</button>
         )
 }
 

@@ -5,13 +5,12 @@
         $calculate: calc($pixel/16px);
         @return #{$calculate}#{$suffix};
 }
-//Mixin 
+//Mixin
 
 //  Variable: colors and font
 $font: (
         "fontFamily": "Red Rose",
 );
-
 
 $colors: (
         "major": #a02279,
@@ -19,11 +18,12 @@ $colors: (
         "white": #ffffff,
         "text-black": #434343,
         "grey": #d7d7d7,
+        "very-light-grey": #F8F9FA,
+        "light-grey": #CFD8DC
 );
 
 @mixin media-query($size) {
-        @media (max-width: $size){
-        	@content
+        @media (max-width: $size) {
+                @content;
         }
-        
 }

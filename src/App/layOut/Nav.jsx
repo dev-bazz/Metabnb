@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Icons from "../../assets/icons/Icons";
-import Button from "../component/Button";
 
-export default function Nav() {
+export default function Nav({handleModal}) {
+
+
         return (
                 <nav className="nav">
                         <div className="container--global nav-container">
@@ -13,7 +15,7 @@ export default function Nav() {
                                         <li><NavLink to={'NFTs'}>NFTs </NavLink>  </li>
                                         <li><NavLink to={'/'}>Community </NavLink>  </li>
                                 </ul>
-                                <Button text={`Connect Wallet`} className={`btn `} />
+                                <button className="btn" onClick={() => handleModal()}> Connect Wallet</button>
                         </div>
                 </nav>
         )
