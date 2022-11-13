@@ -122,7 +122,9 @@
         }
         ul{
                 display: flex;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: pix-rem(16px);
+                justify-content: space-evenly;
                 
         }
 }

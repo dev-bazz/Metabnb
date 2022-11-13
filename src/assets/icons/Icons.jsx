@@ -8,7 +8,7 @@ const Icons = ({ name, ...rest }) => {
                 case "star":
                         return <Star />;
                 case "heart":
-                        return <Heart />;
+                        return <Heart {...rest} />;
                 case "brand-white":
                         return <BrandWhite />;
                 case "arrow-up":

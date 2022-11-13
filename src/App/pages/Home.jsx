@@ -31,13 +31,14 @@ export default function Home() {
                                 <div className="inspiration--wrapper container--global">
                                         <h2 id='inspiration'>Inspiration for your next adventure</h2>
                                         <ul role={`list`}>
-                                                {imageNFTs.map((nft) => <NftCard
+                                                {imageNFTs.map((nft, index) => <NftCard
                                                         image={nft.image}
                                                         title={nft.title}
                                                         alt={nft.alt}
                                                         availability={nft.availability}
                                                         distance={nft.distance}
                                                         cost={nft.cost}
+                                                        key={index}
                                                 />)}
                                         </ul>
 
