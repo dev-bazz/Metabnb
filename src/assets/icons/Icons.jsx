@@ -21,7 +21,7 @@ const Icons = ({ name, ...rest }) => {
                         return <Facebook />
                 case "twitter":
                         return <Twitter />
-                case "Instagran":
+                case "Instagram":
                         return <Instagran />
                 case "wallet":
                         return <Wallet />

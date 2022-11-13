@@ -7,6 +7,7 @@ import DOMMethods from "../publicTools";
 import Dialog from "./component/Dialog";
 import Icons from "../assets/icons/Icons";
 import LinkBTN from "./component/LinkBTN";
+import Footer from "./layOut/Footer";
 
 
 
@@ -39,6 +40,7 @@ export default function App() {
                                         <LinkBTN name={`wallet`} text={`WalletConnect`} />
                                 </div>
                         </Dialog>
+                        <Footer />
                 </>
         )
 }

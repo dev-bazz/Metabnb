@@ -3,8 +3,8 @@ import heroImage from '../../assets/images/hero-image.webp';
 
 export default function Home() {
         return (
-                <section >
-                        <div className="hero container--global">
+                <main >
+                        <section aria-label='Rent a place in Metaverse' className="hero container--global">
                                 <div className="container--wrapper">
                                         <h1 className='hero--title'>Rent a <span> Place </span> away from<br /> <span> Home </span> in the <span> Metaverse</span></h1>
                                         <p className='hero--msg'>we provide you access to luxury and affordable houses in the metaverse, get a chance to turn your imagination to reality at your comfort zone</p>
@@ -16,14 +16,14 @@ export default function Home() {
                                 <div className="container--wrapper">
                                         <img src={heroImage} alt="a collections of NFTs displaye in an offset grid layout" srcset="" />
                                 </div>
-                        </div>
-                        <div className="brands">
+                        </section>
+                        <section aria-label='brands' className="brands">
                                 <div className="brands--wrapper container--global">
                                         <Icons name={`mb-token`} />
                                         <Icons name={`meta-mask`} />
                                         <Icons name={`open-sea`} />
                                 </div>
-                        </div>
-                </section>
+                        </section>
+                </main>
         )
 }

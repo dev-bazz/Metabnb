@@ -1,0 +1,43 @@
+@use "../utilities" as *;
+
+.footer {
+        color: map-get($colors, "white");
+        background-color: map-get($colors, "black");
+        padding-block: pix-rem(58px);
+        margin-top: pix-rem(92px);
+
+        &--wrapper {
+                display: flex;
+                gap: pix-rem(186px);
+                align-items: first baseline;
+        }
+        &-group:nth-child(1){
+                &>*{
+                        &:nth-child(2){
+                                margin-top: pix-rem(96px);
+                                .social{
+                                        display: flex;
+                                        gap: pix-rem(32px);
+                                }
+                                &> *:nth-child(2){
+                                        margin-top: pix-rem(56px);
+                                }
+                        }
+                }
+        }
+        &-group:nth-child(2){
+                display: flex;
+                gap: pix-rem(216px);
+                h6{
+                        font-size: pix-rem(18px);
+                        font-weight: bold;
+                }
+                li{
+                        color: #F1F3F9;
+                        font-size: pix-rem(14px);
+                }
+                li + li {
+                        margin-top: pix-rem(16px);
+                }
+        }
+}
