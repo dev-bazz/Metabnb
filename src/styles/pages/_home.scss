@@ -9,6 +9,31 @@
                 justify-content: center;
         }
 
+        &--search{
+                width: min( 100%, pix-rem(618.71px));
+                display: flex;
+                justify-content: space-between;
+                &> *{
+                        &:nth-child(1){
+                                flex: 2 1 0;
+                                width: 100%;
+                                padding-inline: pix-rem(16px);
+                                border: 1px solid #A3A3A3;
+                                border-radius: pix-rem(8px) 0 0 pix-rem(8px);
+                                border-right: 0;
+                                &:focus-within{
+                                        outline: 1px solid  lighten(map-get($colors, 'major'), $amount: 20);
+                                }
+                        }
+                        &:nth-child(2){
+                                border-radius: 0 pix-rem(8px) pix-rem(8px) 0;
+                                flex: 1 1 0;
+                                width: min(100%, pix-rem(230px));
+                                text-align: center;
+                        }
+                }
+        }
+
         &--title {
                 font-size: pix-rem(55px, rem);
                 font-weight: 400;
@@ -28,6 +53,7 @@
                 &:nth-child(1) {
                         margin-top: pix-rem(28px, rem);
                         width: min(100%, pix-rem(636px,rem));
+                        
                         & > * + * {
                                 margin-top: pix-rem(48px,rem);
                         }
@@ -35,5 +61,15 @@
                 &:nth-child(2) {
                         width: min(100%, pix-rem(476px, rem));
                 }
+        }
+}
+.brands{
+        background-color: map-get($colors,  'major');
+        margin-top: pix-rem(62px);
+        padding-block: pix-rem(10px);
+        &--wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
         }
 }

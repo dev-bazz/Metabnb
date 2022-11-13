@@ -1,4 +1,4 @@
-import { BrandLogo, Star, Heart, Wallet, BrandWhite, X, Setting, Facebook, Twitter, Instagran, OpenSea, MetaMask, MBToken, MetaMaskFox } from "./BrandSet";
+import { BrandLogo, Star, Heart, Wallet, BrandWhite, X, Setting, Facebook, Twitter, Instagran, OpenSea, MetaMask, MBToken, MetaMaskFox, Arrow } from "./BrandSet";
 
 
 const Icons = ({ name, ...rest }) => {

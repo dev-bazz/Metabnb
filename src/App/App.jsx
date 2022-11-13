@@ -1,5 +1,4 @@
 import Nav from "./layOut/Nav";
-
 import { Route, Routes } from "react-router-dom"
 import Home from "./pages/Home";
 import Nft from "./pages/Nft";
@@ -21,7 +20,6 @@ export default function App() {
                 DOMMethods.closeModal(modal.current)
         }
 
-
         return (
                 <>
                         <Nav handleModal={handleModal} />
@@ -37,8 +35,8 @@ export default function App() {
                                         </div>
                                 </div>
                                 <div className="modal__body">
-                                        <LinkBTN name={`meta-fox`} />
-                                        <LinkBTN name={`wallet`} />
+                                        <LinkBTN name={`meta-fox`} text={`Metamask`} />
+                                        <LinkBTN name={`wallet`} text={`WalletConnect`} />
                                 </div>
                         </Dialog>
                 </>

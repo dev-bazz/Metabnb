@@ -11,7 +11,6 @@
                 padding: pix-rem(32px);
                 & > * + * {
                         margin-top: pix-rem(16px);
-                       
                 }
         }
 
@@ -41,9 +40,27 @@
         width: min(100%, pix-rem(536px));
         margin-inline: auto;
         padding: pix-rem(12px) pix-rem(20px);
-        border: pix-rem(2px)  solid map-get($colors, 'light-grey');
+        border: pix-rem(2px) solid map-get($colors, "light-grey");
         border-radius: pix-rem(12px);
-        background-color: map-get($colors, 'very-light-grey');
+        background-color: map-get($colors, "very-light-grey");
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:hover {
+                background-color: darken(map-get($colors, "very-light-grey"), 5);
+                cursor: pointer;
+        }
+
+        p {
+                font-weight: 600;
+                font-size: pix-rem(18px);
+        }
+
+        .link-title {
+                display: flex;
+                align-items: center;
+                gap: pix-rem(16px);
+        }
 }
 
 @keyframes rotate {
