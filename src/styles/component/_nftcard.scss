@@ -43,6 +43,10 @@
 .heart {
         fill: #d7d7d7;
         cursor: pointer;
+        &:hover{
+                fill: white;
+                transition: fill .2s ease-in-out;
+        }
         &--checked {
                 fill: lighten(map-get($colors, "major"), $amount: 30);
                 cursor: pointer;

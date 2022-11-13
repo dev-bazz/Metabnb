@@ -1,0 +1,10 @@
+@use "../utilities" as *;
+.nft-page {
+        margin-bottom: pix-rem(90px);
+        .nav-list {
+                display: flex;
+                justify-content: space-between;
+                width: min(100%, pix-rem(921px));
+                margin-top: pix-rem(120px);
+        }
+}
