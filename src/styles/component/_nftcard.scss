@@ -1,0 +1,12 @@
+@use "../utilities" as *;
+
+.NFT {
+        width: min(100%, pix-rem(292px));
+        border: 1px solid map-get($colors, 'grey');
+        border-radius: pix-rem(14px);
+        padding: pix-rem(16px);
+        &__card {
+                background-color: map-get($colors, 'white');
+                
+        }
+}

@@ -104,8 +104,25 @@
                                         background-color: map-get($colors, 'white');
                                         padding: pix-rem(14px) pix-rem(34px);
                                         border-radius: pix-rem(8px);
+                                        cursor: pointer;
+                                        &:active{
+                                                background-color: darken(map-get($colors, 'white'), 10);
+                                        }
                                 }
                         }
                 }
+        }
+}
+
+.inspiration{
+        padding-block: pix-rem(42px);
+        h2{
+                text-align: center;
+                font-size: pix-rem(48px);
+        }
+        ul{
+                display: flex;
+                justify-content: space-between;
+                
         }
 }

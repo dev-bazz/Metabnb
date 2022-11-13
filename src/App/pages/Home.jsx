@@ -1,6 +1,7 @@
 import Icons from '../../assets/icons/Icons';
 import heroImage from '../../assets/images/hero-image.webp';
 import footerImage from '../../assets/images/footer-image.webp'
+import NftCard from '../component/NtfCard';
 
 export default function Home() {
         return (
@@ -23,6 +24,18 @@ export default function Home() {
                                         <Icons name={`mb-token`} />
                                         <Icons name={`meta-mask`} />
                                         <Icons name={`open-sea`} />
+                                </div>
+                        </section>
+                        <section aria-labelledby='inspiration' className='inspiration'>
+                                <div className="inspiration--wrapper container--global">
+                                        <h2 id='inspiration'>Inspiration for your next adventure</h2>
+                                        <ul role={`list`}>
+                                                <NftCard />
+                                                <NftCard />
+                                                <NftCard />
+                                                <NftCard />
+                                        </ul>
+                                        
                                 </div>
                         </section>
                         <section aria-labelledby='Metabnb' className='meta-section'  >
