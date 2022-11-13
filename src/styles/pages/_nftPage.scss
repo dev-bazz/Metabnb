@@ -5,6 +5,29 @@
                 display: flex;
                 justify-content: space-between;
                 width: min(100%, pix-rem(921px));
+        }
+
+        .top {
+                display: flex;
+                justify-content: space-between;
                 margin-top: pix-rem(120px);
+                align-items: center;
+
+                .location {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: min(100%, pix-rem(161px));
+                        cursor: pointer;
+                        border: 1px solid map-get($colors, "grey");
+                        border-radius: pix-rem(8px);
+                        padding: pix-rem(14px);
+                }
+        }
+        .nft-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: pix-rem(16px);
+                justify-content: space-evenly;
         }
 }
