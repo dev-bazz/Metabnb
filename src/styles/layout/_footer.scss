@@ -4,7 +4,7 @@
         color: map-get($colors, "white");
         background-color: map-get($colors, "black");
         padding-block: pix-rem(58px);
-        margin-top: pix-rem(92px);
+        // margin-top: pix-rem(92px);
 
         &--wrapper {
                 display: flex;

@@ -1,5 +1,6 @@
 import Icons from '../../assets/icons/Icons';
 import heroImage from '../../assets/images/hero-image.webp';
+import footerImage from '../../assets/images/footer-image.webp'
 
 export default function Home() {
         return (
@@ -22,6 +23,20 @@ export default function Home() {
                                         <Icons name={`mb-token`} />
                                         <Icons name={`meta-mask`} />
                                         <Icons name={`open-sea`} />
+                                </div>
+                        </section>
+                        <section aria-labelledby='Metabnb' className='meta-section'  >
+                                <div className="meta-wrapper container--global">
+                                        <div>
+                                                <div className="meta">
+                                                <h2 id='Metabnb'>Metabnb NFTs</h2>
+                                                <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
+                                        </div>
+                                        <button>Learn more</button>
+                                        </div>
+                                        <div className="meta">
+                                                <img src={footerImage} alt="Meta NFT" srcset="" />
+                                        </div>
                                 </div>
                         </section>
                 </main>
