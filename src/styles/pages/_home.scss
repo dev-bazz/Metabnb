@@ -5,7 +5,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: pix-rem(16px, rem);
-        @include media-query(767.98px) {
+        @include media-query(1198.98px) {
                 justify-content: center;
         }
 
@@ -71,6 +71,9 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                @include media-query(630px){
+                        font-size: 8px;
+                }
         }
 }
 .meta-section {
@@ -81,6 +84,28 @@
         .meta-wrapper {
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
+                align-content: center;
+                @include media-query(1179px){
+                        flex-direction: column;
+                        
+                        align-items: center;
+                        h2{
+                                margin-inline: auto;
+                                text-align: center;
+                        }
+                        
+                        .info{
+                                display: flex ;
+                                flex-flow: column wrap;
+                                align-items: center;
+                        }
+                        p{
+                                width: min(100%, 50ch) !important;
+                                text-align: center;
+                                margin-inline: auto;
+                        }
+                }
 
                 h2 {
                         font-size: pix-rem(48px);
