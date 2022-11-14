@@ -4,6 +4,7 @@
 @use "./component/all-components";
 @use "./layout/allLayout";
 @use "./pages/pages";
+@use "./media";
 
 :root {
         font-family: map-get($font, "fontFamily"), cursive;
@@ -30,5 +31,19 @@ body {
         &::selection {
                 background-color: map-get($colors, "major") !important;
                 color: white !important;
+        }
+}
+
+
+
+@media (max-width: 991.98px){
+        :root{
+                font-size:14px
+        }
+}
+
+@media (max-width: 767.98px){
+        :root{
+                font-size: 12px;
         }
 }

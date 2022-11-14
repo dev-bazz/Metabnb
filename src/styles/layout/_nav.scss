@@ -9,6 +9,10 @@
                 
         }
         .nav-link__list {
+
+                @include media-query(1190px){
+                        display: none;
+                }
                 display: flex;
                 margin-block: 0;
                 gap: pix-rem(48px);

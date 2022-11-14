@@ -46,7 +46,7 @@ export default function Home() {
                         </section>
                         <section aria-labelledby='Metabnb' className='meta-section'  >
                                 <div className="meta-wrapper container--global">
-                                        <div>
+                                        <div  className='info' >
                                                 <div className="meta">
                                                         <h2 id='Metabnb'>Metabnb NFTs</h2>
                                                         <p>Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.</p>
